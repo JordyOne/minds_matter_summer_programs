@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-4 col-md-offset-4">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">Minds Matter Summer Programs</h3>
+        </div>
+        <div class="panel-body">
+          <%= form_for @user do |f| %>
+              <div class="form-group">
+                <%= f.text_field :email, class: "form-control" %>
+              </div>
+              <div class="form-group">
+                <%= f.password_field :password, class: "form-control" %>
+              </div>
+              <%= f.submit "Login", class: "btn btn-lg btn-success btn-block" %>
+          <% end %>
+          <hr/>
+          <center><h4>OR</h4></center>
+          <a href="<%= new_user_path %>" role="button" class="btn btn-lg btn-facebook btn-block">Sign Up</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
