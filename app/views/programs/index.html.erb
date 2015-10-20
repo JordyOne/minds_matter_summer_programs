@@ -1,0 +1,29 @@
+<table class="table table-striped">
+  <caption>All Summer Programs</caption>
+
+  <thead>
+  <tr>
+    <th>Title</th>
+    <th>School</th>
+    <th>Start Date</th>
+    <th>End Date</th>
+    <th>Application Deadline</th>
+    <th>Description</th>
+    <th>Other Requirements</th>
+  </tr>
+  </thead>
+
+  <tbody>
+  <% @programs.each do |program| %>
+      <tr>
+        <td><%= program.title %></td>
+        <td><%= program.school %></td>
+        <td><%= program.start_date %></td>
+        <td><%= program.end_date %></td>
+        <td><%= program.application_deadline %></td>
+        <td><%= program.description %></td>
+        <td><%= program.other_requirements %></td>
+      </tr>
+  <% end %>
+  </tbody>
+</table>

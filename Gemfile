@@ -31,6 +31,9 @@ gem 'bcrypt', '~> 3.1.7'
 
 # Use Bootstrap for CSS and Javascript styling
 gem 'bootstrap-sass', '~> 3.2.0'
+gem 'autoprefixer-rails'
+
+gem 'byebug', '~> 6.0.2'
 
 # Use unicorn as the app server
 # gem 'unicorn'
