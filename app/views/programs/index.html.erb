@@ -10,6 +10,7 @@
     <th>Application Deadline</th>
     <th>Description</th>
     <th>Other Requirements</th>
+    <th>Actions</th>
   </tr>
   </thead>
 
@@ -21,8 +22,9 @@
         <td><%= program.start_date %></td>
         <td><%= program.end_date %></td>
         <td><%= program.application_deadline %></td>
-        <td><%= program.description %></td>
+        <td><%= program.description.truncate(100) %></td>
         <td><%= program.other_requirements %></td>
+        <td><a href="#" class="btn btn-default">View</a></td>
       </tr>
   <% end %>
   </tbody>
