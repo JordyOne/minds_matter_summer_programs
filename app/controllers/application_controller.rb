@@ -7,7 +7,7 @@ class ApplicationController < ActionController::Base
   include SessionsHelper
 
   def login_check?
-    logged_in?
+    redirect_to root_path if !logged_in?
   end
 
   def admin_check?
