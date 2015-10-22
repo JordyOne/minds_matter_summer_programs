@@ -7,6 +7,13 @@
         </div>
         <div class="panel-body">
           <%= form_for @program do |f| %>
+              <% if @program.errors.any? %>
+                  <ul>
+                    <% @program.errors.full_messages.each do |msg| %>
+                        <li><%= msg %></li>
+                    <% end %>
+                  </ul>
+              <% end %>
               <div class="form-group">
                 <%= f.label :title %>
                 <%= f.text_field :title, class: "form-control" %>
@@ -17,15 +24,15 @@
               </div>
               <div class="form-group">
                 <%= f.label :start_date %>
-                <%= f.date_select :start_date, class: "form-control" %>
+                <%= f.date_field :start_date, class: "form-control" %>
               </div>
               <div class="form-group">
                 <%= f.label :end_date %>
-                <%= f.date_select :end_date, class: "form-control" %>
+                <%= f.date_field :end_date, class: "form-control" %>
               </div>
               <div class="form-group">
                 <%= f.label :application_deadline %>
-                <%= f.date_select :application_deadline, class: "form-control" %>
+                <%= f.date_field :application_deadline, class: "form-control" %>
               </div>
               <div class="form-group">
                 <%= f.label :website %>

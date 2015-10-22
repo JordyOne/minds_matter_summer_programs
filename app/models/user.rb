@@ -10,6 +10,7 @@ class User < ActiveRecord::Base
 
   has_secure_password
   attr_accessor :remember_token
+  attr_accessor :keyword
 
   # Returns the hash digest of the given string.
   def self.digest(string)
