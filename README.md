@@ -28,3 +28,5 @@ If you choose to help out, here are our priotities:
   11) 'admin' should have an index view of all current students
   
   12) The student index view should show the count, applied, and accepted of associated summer programs for each student
+
+13) Test
